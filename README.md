@@ -1,18 +1,18 @@
 # myQR
 
-**myQR** is a lightweight, fast, and mobile-friendly QR code generator built with React and Vite. Users can instantly generate QR codes from text or URLs and download them as images.
+**myQR** is a fast, lightweight QR code generator built with React and Vite. Enter any text or URL, generate a QR code instantly, and download it in seconds.
 
-![screenshot](screenshot-placeholder.png)
+![App Screenshot](./screenshot.png)
 
 ---
 
 ## Features
 
-- Generate QR codes instantly from text or links
-- Download QR code as PNG
+- Generate QR codes instantly from text or URLs
+- Download QR codes as PNG images
 - Copy-to-clipboard support *(coming soon)*
-- PWA support *(coming soon)*
-- Clean mobile-first design
+- Progressive Web App support *(coming soon)*
+- Clean, mobile-first design
 
 ---
 
@@ -20,8 +20,8 @@
 
 - React + Vite
 - HTML5 / CSS3 / JavaScript
-- [qrcode.react](https://github.com/zpao/qrcode.react) or `qrcode` npm package
-- Netlify (for deployment)
+- `qrcode` or `qrcode.react`
+- Netlify (deployment)
 
 ---
 
@@ -32,12 +32,31 @@ git clone https://github.com/yourusername/myQR.git
 cd myQR
 npm install
 npm run dev
+```
+---
+
+## Usage
+
+1. Enter text or a URL into the input field  
+2. Click **Generate QR Code**  
+3. Download the QR code as an image  
+
+---
+
+### Example
+
+- Input: `https://example.com`  
+- Output: A scannable QR code linking to the URL
+
+---
 
 ## License
-- GNU General Public License v3.0
+This project is licensed under the GNU General Public License v3.0.
+
+---
 
 ## Credits
-- Created by Emmett Pennington, penningtonProgramming
-- Inspired by the Open Source QR ecosystem
+- Created by Emmett Pennington (penningtonProgramming)
+- Inspired by the open Source QR ecosystem
 
 
