@@ -113,3 +113,18 @@ body {
     width: 100%;
   }
 }
+
+.qr-download {
+  margin-top: 1rem;
+  border: none;
+  border-radius: 12px;
+  padding: 0.6rem 1rem;
+  background: #2563eb;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.qr-download:hover {
+  transform: translateY(-1px);
+}

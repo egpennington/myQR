@@ -19,6 +19,15 @@ export default function QRGenerator() {
     generateQR();
   };
 
+  const downloadQR = () => {
+    if (!qr) return;
+
+    const link = document.createElement("a");
+    link.href = qr;
+    link.download = "qrcode.png";
+    link.click();
+    };
+
   return (
     <main className="app">
       <section className="qr-card">
@@ -41,9 +50,13 @@ export default function QRGenerator() {
         </form>
 
         {qr && (
-          <div className="qr-output">
-            <img src={qr} alt="QR Code" />
-          </div>
+            <div className="qr-output">
+                <img src={qr} alt="QR Code" />
+
+                <button className="qr-download" onClick={downloadQR}>
+                Download PNG
+                </button>
+            </div>
         )}
       </section>
     </main>
